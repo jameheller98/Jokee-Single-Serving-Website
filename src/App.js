@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import logoUser from "./logoUser.png";
+import logoUser from "./logoUser.svg";
 import "./App.css";
 import { jokes } from "./dataJoke";
 import { useEffect, useState } from "react";
