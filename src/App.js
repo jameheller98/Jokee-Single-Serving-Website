@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import logoUser from "./logoUser.svg";
+import logoUser from "./logoUser.jpg";
 import "./App.css";
 import { jokes } from "./dataJoke";
 import { useEffect, useState } from "react";
@@ -99,8 +99,8 @@ function App() {
             </>
           ) : (
             <section className="App-main">
-              `&quot;`That`&apos;`s all the jokes for today! Come back another
-              day!`&quot;`
+              &quot;That&apos;s all the jokes for today! Come back another
+              day!&quot;
             </section>
           )
         }
