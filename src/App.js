@@ -99,7 +99,8 @@ function App() {
             </>
           ) : (
             <section className="App-main">
-              "That's all the jokes for today! Come back another day!"
+              `&quot;`That`&apos;`s all the jokes for today! Come back another
+              day!`&quot;`
             </section>
           )
         }
