@@ -2,37 +2,146 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 13vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-user {
+  display: flex;
+  align-items: center;
+}
+
+.App-user__name {
+  display: inline-block;
+  text-align: right;
+  min-width: 50px;
+  font-size: 0.9em;
+}
+
+.App-user__name--small {
+  font-style: italic;
+  color: rgb(148, 148, 148);
+}
+
+.App-user__logo {
+  border-radius: 50%;
+  margin-left: 1em;
+}
+
+.App-body {
+  min-height: 70vh;
+}
+
+.App-banner {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(0, 211, 95);
   color: white;
+  height: 20vh;
+  padding: calc(10px + 2vmin);
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.App-banner--group {
+  padding: 10px;
+}
+
+.App-banner--title {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.App-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(20px + 2vmin);
+  margin: 20px;
+}
+
+.App-content {
+  text-align: left;
+  padding: 0 calc(20px + 2vmin);
+}
+
+.App-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.App-button {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 20px;
+  min-width: 100px;
+  color: white;
+  border: none;
+}
+
+.App-button-left {
+  background-color: rgb(93, 93, 255);
+}
+
+.App-button-left:hover {
+  background-color: rgb(93, 93, 255, 0.7);
+}
+
+.App-button-right {
+  background-color: rgb(0, 211, 95);
+}
+
+.App-button-right:hover {
+  background-color: rgb(0, 211, 95, 0.7);
+}
+
+.App-horizontal {
+  min-height: 0.5vh;
+  margin: 0;
+}
+
+.App-footer {
+  min-height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1200px) {
+  .App-header {
+    height: 12vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-user__name {
+    font-size: 0.7em;
+  }
+
+  .App-user__logo {
+    border-radius: 50%;
+    margin-left: 1em;
+    width: 60px;
+    height: 60px;
+  }
+
+  .App-content {
+    text-align: left;
+    padding: 0 calc(20px + 40vmin);
+  }
+
+  .App-button {
+    min-width: 200px;
   }
 }
